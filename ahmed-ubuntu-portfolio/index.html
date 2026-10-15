@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2c001e">
+  <meta name="description" content="Ahmed Siddiq — DevOps Engineer and Site Reliability Engineer portfolio. AWS, Kubernetes, Terraform, CI/CD, GitOps and observability.">
+  <title>Ahmed Siddiq — DevOps Desktop</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="topbar" role="banner">
+    <button class="topbar-brand" id="activitiesButton" aria-label="Open activities">Activities</button>
+    <div class="topbar-center" id="topbarTitle">Ahmed Siddiq — DevOps Engineer</div>
+    <div class="system-tray">
+      <button class="tray-button" id="networkButton" aria-label="Network status" title="Network">⌁</button>
+      <button class="tray-button" id="soundButton" aria-label="Sound status" title="Sound">◖</button>
+      <button class="tray-button" id="powerButton" aria-label="Power status" title="Power">▰</button>
+      <button class="clock-button" id="clockButton" aria-label="Open calendar">--:--</button>
+      <button class="tray-button" id="systemMenuButton" aria-label="Open system menu" title="System menu">▾</button>
+    </div>
+  </div>
+
+  <main class="desktop" id="desktop">
+    <div class="desktop-shortcuts" aria-label="Desktop shortcuts">
+      <button class="desktop-icon" data-open="about">
+        <span class="shortcut-art folder-art">●</span><span>About Ahmed</span>
+      </button>
+      <button class="desktop-icon" data-open="projects">
+        <span class="shortcut-art project-art">▤</span><span>Projects</span>
+      </button>
+      <button class="desktop-icon" data-open="skills">
+        <span class="shortcut-art skills-art">⚙</span><span>Tech Stack</span>
+      </button>
+      <button class="desktop-icon" data-open="contact">
+        <span class="shortcut-art contact-art">✉</span><span>Contact</span>
+      </button>
+    </div>
+
+    <section class="welcome-card">
+      <div class="welcome-eyebrow"><span class="status-dot"></span> AVAILABLE FOR DEVOPS / SRE OPPORTUNITIES</div>
+      <h1>Hi, I'm <span>Ahmed Siddiq.</span></h1>
+      <p class="welcome-role">DevOps Engineer <span>·</span> Site Reliability Engineer</p>
+      <p class="welcome-copy">I build reliable cloud platforms, automate delivery, and help production systems stay observable, secure, and resilient.</p>
+      <div class="welcome-actions">
+        <button class="primary-button" data-open="projects">Explore my work <span>↗</span></button>
+        <button class="secondary-button" data-open="contact">Get in touch</button>
+      </div>
+      <div class="welcome-stats">
+        <div><strong>3.5+</strong><span>Years in DevOps</span></div>
+        <div><strong>10+</strong><span>EKS clusters supported</span></div>
+        <div><strong>70+</strong><span>Production apps supported</span></div>
+      </div>
+    </section>
+
+    <div class="desktop-note"><span>Tip</span> Double-click a desktop icon or use the dock to explore.</div>
+
+    <nav class="dock" aria-label="Application dock">
+      <button class="dock-item" data-open="about" aria-label="About"><span class="dock-glyph ubuntu-glyph">◉</span><span class="dock-tooltip">About</span></button>
+      <button class="dock-item" data-open="projects" aria-label="Projects"><span class="dock-glyph folder-glyph">▤</span><span class="dock-tooltip">Projects</span></button>
+      <button class="dock-item" data-open="skills" aria-label="Skills"><span class="dock-glyph gear-glyph">⚙</span><span class="dock-tooltip">Skills</span></button>
+      <button class="dock-item" data-open="experience" aria-label="Experience"><span class="dock-glyph chart-glyph">▥</span><span class="dock-tooltip">Experience</span></button>
+      <button class="dock-item" data-open="contact" aria-label="Contact"><span class="dock-glyph mail-glyph">✉</span><span class="dock-tooltip">Contact</span></button>
+      <span class="dock-divider"></span>
+      <button class="dock-item" id="terminalDockButton" aria-label="Terminal"><span class="dock-glyph terminal-glyph">&gt;_</span><span class="dock-tooltip">Terminal</span></button>
+      <button class="dock-item" id="showAllButton" aria-label="Show all windows"><span class="dock-glyph all-glyph">▦</span><span class="dock-tooltip">Show windows</span></button>
+    </nav>
+
+    <!-- About window -->
+    <section class="app-window" id="window-about" data-window="about" aria-labelledby="aboutTitle" hidden>
+      <header class="window-titlebar">
+        <div class="window-title"><span class="window-app-icon about-icon">●</span><span id="aboutTitle">About Ahmed</span></div>
+        <div class="window-controls"><button data-minimize="about" aria-label="Minimize">−</button><button data-maximize="about" aria-label="Maximize">□</button><button data-close="about" aria-label="Close">×</button></div>
+      </header>
+      <div class="window-content about-content">
+        <div class="profile-heading">
+          <div class="avatar">AS</div>
+          <div><h2>Ahmed Siddiq</h2><p>DevOps Engineer · SRE · AWS</p><span class="cert-pill">✓ AWS Certified Solutions Architect – Associate</span></div>
+        </div>
+        <p>I’m a DevOps/SRE professional focused on cloud infrastructure, Kubernetes platforms, automated delivery, observability, and production reliability. I enjoy making delivery workflows repeatable and helping teams troubleshoot issues with clear evidence and measurable outcomes.</p>
+        <div class="info-grid">
+          <div><span class="muted-label">FOCUS</span><strong>Cloud & Platform Engineering</strong></div>
+          <div><span class="muted-label">CLOUD</span><strong>AWS · EKS · EC2 · S3 · IAM</strong></div>
+          <div><span class="muted-label">AUTOMATION</span><strong>Terraform · Ansible · CI/CD</strong></div>
+          <div><span class="muted-label">OPERATIONS</span><strong>SLOs · RCA · Monitoring</strong></div>
+        </div>
+        <div class="inline-actions">
+          <a class="primary-button link-button" href="https://github.com/AlphaX1B" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a class="secondary-button link-button" href="https://www.linkedin.com/in/mohahmsid/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects window -->
+    <section class="app-window" id="window-projects" data-window="projects" aria-labelledby="projectsTitle" hidden>
+      <header class="window-titlebar">
+        <div class="window-title"><span class="window-app-icon project-icon">▤</span><span id="projectsTitle">Projects</span></div>
+        <div class="window-controls"><button data-minimize="projects" aria-label="Minimize">−</button><button data-maximize="projects" aria-label="Maximize">□</button><button data-close="projects" aria-label="Close">×</button></div>
+      </header>
+      <div class="window-content">
+        <p class="section-intro">Selected platform engineering work and practical labs.</p>
+        <article class="project-card">
+          <div class="project-card-top"><span class="project-symbol">☁</span><span class="project-tag">AWS · Terraform</span></div>
+          <h3>Infrastructure as Code for Amazon EKS</h3>
+          <p>Reusable Terraform patterns for VPC networking, EKS, managed node groups, IAM roles and remote state.</p>
+          <div class="tag-list"><span>Terraform</span><span>AWS EKS</span><span>VPC</span><span>IAM</span></div>
+          <a href="https://github.com/AlphaX1B/eks-terraform-github-actions" target="_blank" rel="noreferrer">View repository ↗</a>
+        </article>
+        <article class="project-card">
+          <div class="project-card-top"><span class="project-symbol">⟳</span><span class="project-tag">CI/CD · GitOps</span></div>
+          <h3>Automated Kubernetes Delivery</h3>
+          <p>CI/CD workflow concepts using container builds, image registries, Helm manifests and GitOps-based deployments.</p>
+          <div class="tag-list"><span>Jenkins</span><span>GitHub Actions</span><span>Docker</span><span>Argo CD</span></div>
+          <a href="https://github.com/AlphaX1B" target="_blank" rel="noreferrer">Explore GitHub ↗</a>
+        </article>
+        <article class="project-card">
+          <div class="project-card-top"><span class="project-symbol">◉</span><span class="project-tag">Observability</span></div>
+          <h3>Production Monitoring & Reliability</h3>
+          <p>Monitoring and incident-response practices built around dashboards, alerting, service indicators, root-cause analysis and SLOs.</p>
+          <div class="tag-list"><span>Dynatrace</span><span>CloudWatch</span><span>Prometheus</span><span>Grafana</span></div>
+          <a href="https://www.linkedin.com/in/mohahmsid/" target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a>
+        </article>
+        <p class="edit-note">These project descriptions are starter content. Edit them to match work you can publicly share.</p>
+      </div>
+    </section>
+
+    <!-- Skills window -->
+    <section class="app-window" id="window-skills" data-window="skills" aria-labelledby="skillsTitle" hidden>
+      <header class="window-titlebar">
+        <div class="window-title"><span class="window-app-icon skills-icon">⚙</span><span id="skillsTitle">Technology Stack</span></div>
+        <div class="window-controls"><button data-minimize="skills" aria-label="Minimize">−</button><button data-maximize="skills" aria-label="Maximize">□</button><button data-close="skills" aria-label="Close">×</button></div>
+      </header>
+      <div class="window-content">
+        <p class="section-intro">Tools I have used or am actively developing experience with.</p>
+        <div class="skill-group"><h3><span>☁</span> Cloud & Infrastructure</h3><div class="skill-chips"><span>AWS</span><span>EKS</span><span>EC2</span><span>VPC</span><span>IAM / IRSA</span><span>S3</span><span>Terraform</span><span>Ansible</span></div></div>
+        <div class="skill-group"><h3><span>▦</span> Containers & Delivery</h3><div class="skill-chips"><span>Kubernetes</span><span>Docker</span><span>Helm</span><span>Argo CD</span><span>Jenkins</span><span>GitHub Actions</span><span>OpenShift</span></div></div>
+        <div class="skill-group"><h3><span>◉</span> Observability & Reliability</h3><div class="skill-chips"><span>Dynatrace</span><span>CloudWatch</span><span>New Relic</span><span>Prometheus</span><span>Grafana</span><span>SLI / SLO</span><span>Incident RCA</span></div></div>
+        <div class="skill-group"><h3><span>&gt;_</span> Scripting & Practices</h3><div class="skill-chips"><span>Bash</span><span>Python</span><span>Git</span><span>Linux</span><span>Security best practices</span><span>GitOps</span></div></div>
+        <p class="edit-note">Keep this list accurate. Mark tools you are learning as “familiar with” rather than claiming production expertise.</p>
+      </div>
+    </section>
+
+    <!-- Experience window -->
+    <section class="app-window" id="window-experience" data-window="experience" aria-labelledby="experienceTitle" hidden>
+      <header class="window-titlebar">
+        <div class="window-title"><span class="window-app-icon experience-icon">▥</span><span id="experienceTitle">Experience</span></div>
+        <div class="window-controls"><button data-minimize="experience" aria-label="Minimize">−</button><button data-maximize="experience" aria-label="Maximize">□</button><button data-close="experience" aria-label="Close">×</button></div>
+      </header>
+      <div class="window-content">
+        <div class="timeline-item">
+          <span class="timeline-dot"></span><div><span class="timeline-period">3.5+ YEARS · PREVIOUS ROLE</span><h3>DevOps Engineer / SRE</h3><p class="timeline-company">Tata Consultancy Services · GE HealthCare client</p>
+          <ul><li>Supported 70+ production applications across 10 AWS EKS clusters.</li><li>Worked with Kubernetes deployments, services, ingress, Helm and GitOps workflows.</li><li>Automated infrastructure and deployment tasks with Terraform, Ansible, Jenkins and GitHub Actions.</li><li>Supported monitoring, incident response, root-cause analysis and service reliability practices.</li></ul></div>
+        </div>
+        <div class="impact-panel"><span class="impact-icon">↗</span><div><strong>38% deployment-time reduction</strong><p>Automation and pipeline improvements (as recorded in my experience notes).</p></div></div>
+        <p class="edit-note">Review dates, metrics, and client disclosure before publishing. Only retain details approved for public use.</p>
+      </div>
+    </section>
+
+    <!-- Contact window -->
+    <section class="app-window" id="window-contact" data-window="contact" aria-labelledby="contactTitle" hidden>
+      <header class="window-titlebar">
+        <div class="window-title"><span class="window-app-icon contact-icon">✉</span><span id="contactTitle">Contact Ahmed</span></div>
+        <div class="window-controls"><button data-minimize="contact" aria-label="Minimize">−</button><button data-maximize="contact" aria-label="Maximize">□</button><button data-close="contact" aria-label="Close">×</button></div>
+      </header>
+      <div class="window-content contact-content">
+        <div class="contact-hero"><div class="contact-big-icon">✉</div><h2>Let's build something reliable.</h2><p>Open to DevOps, SRE, cloud platform and infrastructure automation opportunities.</p></div>
+        <form id="contactForm">
+          <label for="senderName">Your name</label><input id="senderName" name="name" required placeholder="Jane Smith">
+          <label for="senderEmail">Your email</label><input id="senderEmail" name="email" type="email" required placeholder="jane@example.com">
+          <label for="senderMessage">Message</label><textarea id="senderMessage" name="message" rows="4" required placeholder="Tell me a little about the opportunity..."></textarea>
+          <button type="submit" class="primary-button">Prepare email <span>↗</span></button>
+          <p class="form-note">This opens your email application; this demo does not send or store messages.</p>
+        </form>
+        <div class="contact-links"><a href="https://github.com/AlphaX1B" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/mohahmsid/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+      </div>
+    </section>
+
+    <!-- Terminal window -->
+    <section class="app-window terminal-window" id="window-terminal" data-window="terminal" aria-labelledby="terminalTitle" hidden>
+      <header class="window-titlebar terminal-titlebar">
+        <div class="window-title"><span class="terminal-mini">&gt;_</span><span id="terminalTitle">ahmed@portfolio: ~</span></div>
+        <div class="window-controls"><button data-minimize="terminal" aria-label="Minimize">−</button><button data-maximize="terminal" aria-label="Maximize">□</button><button data-close="terminal" aria-label="Close">×</button></div>
+      </header>
+      <div class="terminal-output" id="terminalOutput" aria-live="polite"><p>Ahmed Siddiq's interactive portfolio terminal</p><p>Type <b>help</b> to see available commands. This is a browser simulation, not a real shell.</p></div>
+      <form class="terminal-input-row" id="terminalForm"><label for="terminalInput">ahmed@portfolio:~$</label><input id="terminalInput" autocomplete="off" spellcheck="false" aria-label="Terminal command" placeholder="help"></form>
+    </section>
+
+    <div class="system-menu" id="systemMenu" hidden>
+      <div class="system-menu-heading"><span class="system-avatar">AS</span><div><strong>Ahmed Siddiq</strong><small>DevOps desktop</small></div></div>
+      <button data-open="skills">⚙ <span>Settings / Tech stack</span></button>
+      <button data-open="contact">✉ <span>Contact</span></button>
+      <button id="themeButton">◐ <span>Toggle desktop theme</span></button>
+      <button id="resetButton">↻ <span>Reset desktop</span></button>
+    </div>
+    <div class="calendar-popover" id="calendarPopover" hidden><strong id="calendarDate"></strong><p>Thanks for visiting Ahmed's portfolio.</p></div>
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  </main>
+  <footer class="page-footer"><span>Ubuntu-inspired portfolio simulation</span><span>Built with HTML · CSS · JavaScript</span></footer>
+</body>
+</html>
